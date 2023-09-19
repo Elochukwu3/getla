@@ -29,6 +29,9 @@ export default {
         montserrat: ['Montserrat', 'sans-serif'],
         clash: ['Clash Display', 'sans-serif'],
       },
+      spacing:{
+        "3px": "3px"
+      }
     },
   },
   plugins: [],

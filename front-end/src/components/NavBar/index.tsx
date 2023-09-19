@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Button from "../button";
+import {ICON} from "@assets/utils/webImage"
 
 function NavBar() {
   const [drop, setDrop] = useState<Boolean>(false);
@@ -48,8 +49,8 @@ function NavBar() {
           </li>
           <Button caption={"Register"} />
         </ul>
-        <span className="md:hidden block z-40" onClick={handler}>
-          x
+        <span className={`md:hidden flex justify-center  p-3px  z-40 cursor-pointer rounded-full ${drop && "bg-button-gradient"}`} onClick={handler}>
+          <img alt="" src={drop ? ICON.timesImg : ICON.hambuger} className="bg-custom-purple object-contain "/>
         </span>
       </nav>
     </div>
