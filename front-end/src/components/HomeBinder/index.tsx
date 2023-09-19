@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import Button from "../button";
 import { IMAGE_PATH, ICON } from "@assets/utils/webImage";
+import Timer from "@components/Timer";
 
 function HomeBinder() {
   return (
-    <div className="text-white">
+    <div className="text-white border-b border-zinc-700">
       <div className="flex mx-auto w-11/12 justify-between max-md:flex-col-reverse max-md:text-2xl max-sm:text-lg text-3xl font-bold italic font-montserrat text-white">
         <img
           src={ICON.star}
@@ -33,7 +34,7 @@ function HomeBinder() {
           </span>
         </div>
       </div>
-      <div className="flex max-md:flex-col max-md:items-center mt-12">
+      <div className="flex max-md:flex-col max-md:items-center mt-12 ">
         <div className="md:pl-12 w-7/12  max-md:w-10/12  max-sm:text-center ">
           <div className="font-clash space-y-3 font-bold text-7xl max-md:text-4xl max-sm:text-3xl">
             <p>getlinked Tech</p>
@@ -51,22 +52,13 @@ function HomeBinder() {
           <div className="w-7/12 mt-20 md:block hidden">
             <img src={ICON.star} alt="" className="invert-60 w-5 ml-auto block "/>
           </div>
-          <div className="my-9 font-unical text-5xl flex gap-3 max-md:justify-center">
-            <p>
-              0 <span className="text-sm">H</span>
-            </p>
-            <p>
-              0 <span className="text-sm">M</span>
-            </p>
-            <p>
-              0 <span className="text-sm">S</span>
-            </p>
+          <div className="my- font-unical text-5xl flex gap-3 max-md:justify-center">
+              <Timer/>
           </div>
         </div>
         <div className="relative">
           <img src={IMAGE_PATH.man_Img_Banner} alt="" className=" grayscale" />
-          <img src={IMAGE_PATH.moonImg} alt="" className="absolute left-0 -top-10 z-20" />
-
+          <img src={IMAGE_PATH.moonImg} alt="" className="absolute left-0 -top-10 z-10" />
         </div>
       </div>
     </div>
