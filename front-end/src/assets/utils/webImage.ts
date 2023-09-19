@@ -11,6 +11,9 @@ import manOnGlass from "../image/man-on-glass.png";
 import times from "../image/times.png";
 import ham from "../image/ham.png";
 import star from "../image/star.png";
+import chain from "../image/chain.svg";
+import bulbSm from "../image/bulb.svg";
+import fire from "../image/fire.svg";
 
 
 export const IMAGE_PATH = {
@@ -23,6 +26,9 @@ export const IMAGE_PATH = {
     moonImg: moonLike,
     womanImg: womanLike,
     manImg: manOnKey,
+    fireImg: fire,
+    chainImg: chain,
+    bulbSm: bulbSm,
 }
 export const ICON = {
     timesImg: times,

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Button from "../button";
-import { ICON } from "@assets/utils/webImage";
+import { IMAGE_PATH, ICON } from "@assets/utils/webImage";
 
 function HomeBinder() {
   return (
@@ -33,15 +33,26 @@ function HomeBinder() {
           </span>
         </div>
       </div>
-      <div>
-        <div className="font-clash font-bold text-7xl max-md:text-4xl max-sm:text-3xl">
-        <p>getlinked Tech</p>
-        <p>Hackathon <span className="text-custom-highlight">1.0</span></p>
+      <div className="flex max-md:flex-col max-md:items-center mt-12">
+        <div className="md:pl-12 w-7/12  max-md:w-10/12  max-sm:text-center ">
+          <div className="font-clash space-y-3 font-bold text-7xl max-md:text-4xl max-sm:text-3xl">
+            <p>getlinked Tech</p>
+            <p>
+              Hackathon <span className="text-custom-highlight">1.0</span>
+              <img src="" alt="" />
+              <img src="" alt="" />
+            </p>
+          </div>
+          <p className="w-8/12 max-md:w-9/12 max-sm:w-full font-Montserrat mb-8">
+            Participate in getlinked tech Hackathon 2023 stand a chance to win a
+            Big prize
+          </p>
+          <Button caption={"register"} />
+          <div className="my-9">00 00 00</div>
         </div>
-        <p>
-          Participate in getlinked tech Hackathon 2023 stand a chance to win a
-          Big prize
-        </p>
+        <div>
+          <img src={IMAGE_PATH.man_Img_Banner} alt="" className="w-1/" />
+        </div>
       </div>
     </div>
   );
