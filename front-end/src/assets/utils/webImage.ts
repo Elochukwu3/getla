@@ -10,6 +10,7 @@ import manOnKey from "../image/man-onkey.png";
 import manOnGlass from "../image/man-on-glass.png";
 import times from "../image/times.png";
 import ham from "../image/ham.png";
+import star from "../image/star.png";
 
 
 export const IMAGE_PATH = {
@@ -25,6 +26,7 @@ export const IMAGE_PATH = {
 }
 export const ICON = {
     timesImg: times,
-    hambuger: ham
+    hambuger: ham,
+    star: star
 }
 
