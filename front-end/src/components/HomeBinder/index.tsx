@@ -37,10 +37,10 @@ function HomeBinder() {
         <div className="md:pl-12 w-7/12  max-md:w-10/12  max-sm:text-center ">
           <div className="font-clash space-y-3 font-bold text-7xl max-md:text-4xl max-sm:text-3xl">
             <p>getlinked Tech</p>
-            <p>
-              Hackathon <span className="text-custom-highlight">1.0</span>
-              <img src="" alt="" />
-              <img src="" alt="" />
+            <p className="flex items-end">
+              Hackathon <span className="text-custom-highlight ">1.0</span>
+              <img src={IMAGE_PATH.chainImg} alt=""  className="object-contian h-full"/>
+              <img src={IMAGE_PATH.fireImg} alt="" />
             </p>
           </div>
           <p className="w-8/12 max-md:w-9/12 max-sm:w-full font-Montserrat mb-8">
@@ -48,10 +48,25 @@ function HomeBinder() {
             Big prize
           </p>
           <Button caption={"register"} />
-          <div className="my-9">00 00 00</div>
+          <div className="w-7/12 mt-20 md:block hidden">
+            <img src={ICON.star} alt="" className="invert-60 w-5 ml-auto block "/>
+          </div>
+          <div className="my-9 font-unical text-5xl flex gap-3 max-md:justify-center">
+            <p>
+              0 <span className="text-sm">H</span>
+            </p>
+            <p>
+              0 <span className="text-sm">M</span>
+            </p>
+            <p>
+              0 <span className="text-sm">S</span>
+            </p>
+          </div>
         </div>
-        <div>
-          <img src={IMAGE_PATH.man_Img_Banner} alt="" className="w-1/" />
+        <div className="relative">
+          <img src={IMAGE_PATH.man_Img_Banner} alt="" className=" grayscale" />
+          <img src={IMAGE_PATH.moonImg} alt="" className="absolute left-0 -top-10 z-20" />
+
         </div>
       </div>
     </div>

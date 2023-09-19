@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Unica+One&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.radial-gradient {
+/* .radial-gradient {
     background: radial-gradient(circle, rgba(255, 255, 255, 0.1), #43097c);
     width: 300px;
     height: 300px;
@@ -14,23 +14,5 @@
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   }
-  
-  .letter-c{
-    position: relative;
-    width: 255px;
-    height: 17px;
-    background-color: transparent;
-  }
-  
-  .letter-c::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-bottom: 5px solid #FF26B9; /* Stroke color and width */
-    clip-path: polygon(0% 0%, 100% 100%, 100% 100%, 0% 100%);
-    
-  }
+  } */
   

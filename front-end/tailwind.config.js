@@ -28,9 +28,13 @@ export default {
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
         clash: ['Clash Display', 'sans-serif'],
+        unical: ['Unica One', 'cursive'],
       },
       spacing:{
         "3px": "3px"
+      },
+      invert:{
+        "60": "60%"
       }
     },
   },
