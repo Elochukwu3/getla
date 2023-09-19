@@ -1,4 +1,4 @@
-export const pageText = {
+export const PAGE_TEXT = {
   introdructionText: `Our tech hackathon is a melting pot of visionaries, and
    its purpose is as clear as day: to shape the future.
     Whether you're a coding genius, a  design maverick, or a concept wizard,
