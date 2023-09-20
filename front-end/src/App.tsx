@@ -4,6 +4,7 @@ import HomeBinder from "@components/HomeBinder";
 import PageIntro from '@components/PageIntro';
 import PageRules from '@components/PageRules';
 import PageCriteria from '@components/PageCriteria';
+import Faq from '@components/Faq/Index';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <PageIntro/>
         <PageRules/>
         <PageCriteria/>
+        <Faq/>
       </div>
     </>
   )
