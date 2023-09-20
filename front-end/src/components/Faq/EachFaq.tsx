@@ -3,6 +3,7 @@ const EachFaq = () => {
   const [faq, setFaq] = useState(false);
   const handler = () => setFaq(!faq);
 
+  //to start on the question marks on the faq
   return (
     <div className="my-5">
       <div onClick={handler} className="flex justify-between font-montserrat pb-3">
