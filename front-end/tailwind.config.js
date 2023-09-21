@@ -21,21 +21,31 @@ export default {
         "custom-purple": "#150E28",
         "custom-light": "#903aff",
         "custom-highlight": "#d434fe",
+        "custom-pp": "rgba(144, 58, 255, 1)",
       },
       backgroundImage: {
-        "button-gradient": "linear-gradient(to left, rgba(144, 58, 255, 0.7),rgba(254, 52, 185, 1))",
+        "button-gradient":
+          "linear-gradient(to left, rgba(144, 58, 255, 0.7),rgba(254, 52, 185, 1))",
+        award:
+          "linear-gradient(0deg, rgba(212, 52, 254, 0.12), rgba(212, 52, 254, 0.12))",
+        award2:
+          "linear-gradient(0deg, rgba(144, 58, 255, 0.12), rgba(144, 58, 255, 0.12));",
       },
       fontFamily: {
-        montserrat: ['Montserrat', 'sans-serif'],
-        clash: ['Clash Display', 'sans-serif'],
-        unical: ['Unica One', 'cursive'],
-        tommy: ['MADE TOMMY Outline', 'sans-serif'],
+        montserrat: ["Montserrat", "sans-serif"],
+        clash: ["Clash Display", "sans-serif"],
+        unical: ["Unica One", "cursive"],
+        tommy: ["MADE TOMMY Outline", "sans-serif"],
       },
-      spacing:{
-        "3px": "3px"
+      spacing: {
+        "3px": "3px",
       },
-      invert:{
-        "60": "60%"
+      invert: {
+        60: "60%",
+      },
+      borderColor:{
+        'custom-purple': "rgba(144, 58, 255, 1)",
+        'custom-pink': "rgba(212, 52, 254, 1)",
       }
     },
   },

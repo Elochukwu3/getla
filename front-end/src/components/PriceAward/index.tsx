@@ -1,7 +1,7 @@
 import { IMAGE_PATH } from "@assets/utils/webImage";
 import FlexWrapper from "@components/FlexWrapper";
 import HeaderText from "@components/HeaderText";
-import { useState } from "react";
+import EachAward from "./EachAward"
 const PriceAward = () => {
   return (
     <div className="my-5">
@@ -16,13 +16,11 @@ const PriceAward = () => {
       </div>
       <FlexWrapper>
         <img src={IMAGE_PATH.trophyImg} alt="" />
-        <div className="h-52 w-full rounded-md flex flex-col items-center  border border-pink-900">
-            <img src="" alt="" />
-          <div className="justify-end flex flex-col items-center">
-          <p>2nd</p>
-            <p>Runner</p>
-            <p>N300,000</p>
-          </div>
+        <div className="flex gap-10 max-md:gap-7 max-sm:gap-4 justify-center relative">
+        <span className="text-xl text-custom-highlight absolute pl-2">&#x2726;</span>
+            <EachAward position="2nd" amount="N300,000" image={IMAGE_PATH.silverImg} gold={false}/>
+            <EachAward position="1st" amount="N400,000" image={IMAGE_PATH.goldImg} gold={true}/>
+            <EachAward position="3rd" amount="N150,000" image={IMAGE_PATH.bronzeImg} gold={false}/>
         </div>
       </FlexWrapper>
     </div>
