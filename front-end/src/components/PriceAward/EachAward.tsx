@@ -3,7 +3,7 @@ const EachAward = ({ amount, image, position, gold }: propType) => {
   return (
     <div
       className={`relative h-52 max-md:h-40 w-40 max-md:w-28 rounded-md flex flex-col justify-between items-center  border ${
-        gold ? "border-custom-purple bg-award2" : "bg-award border-custom-pink"
+        gold ? "border-custom-purple bg-award2 mt-2" : "bg-award border-custom-pink"
       }`}
     >
       <div className="relative w-full">
