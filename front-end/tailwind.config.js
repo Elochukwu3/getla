@@ -29,6 +29,7 @@ export default {
         montserrat: ['Montserrat', 'sans-serif'],
         clash: ['Clash Display', 'sans-serif'],
         unical: ['Unica One', 'cursive'],
+        tommy: ['MADE TOMMY Outline', 'sans-serif'],
       },
       spacing:{
         "3px": "3px"

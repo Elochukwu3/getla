@@ -1,4 +1,5 @@
   @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Unica+One&display=swap');
+  @import url('https://fonts.cdnfonts.com/css/made-tommy-outline');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,18 +9,19 @@
   box-sizing: border-box;
   list-style-type: none;
 }
-/* .radial-gradient {
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), #43097c);
-    width: 300px;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    font-weight: bold;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  }
-  } */
+.text-border{
+  text-shadow: 
+      1px 0px 0px #d434fe,   /* Right shadow */
+      -1px 0px 0px #d434fe,  /* Left shadow */
+      0px 1px 0px #d434fe,   /* Bottom shadow */
+      0px -1px 0px #d434fe;  /* Top shadow */
+}
+.text-border-two{
+  text-shadow: 
+      1px 0px 0px #fe3496,   /* Right shadow */
+      -1px 0px 0px #fe3496,  /* Left shadow */
+      0px 1px 0px #fe3496,   /* Bottom shadow */
+      0px -1px 0px #fe3496;  /* Top shadow */
+}
 
   

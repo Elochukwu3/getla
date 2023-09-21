@@ -13,6 +13,7 @@ function App() {
       <div  className="min-h-screen py-5 bg-custom-purple">
         <NavBar/>
         <HomeBinder/>
+       
         <PageIntro/>
         <PageRules/>
         <PageCriteria/>
