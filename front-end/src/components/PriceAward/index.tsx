@@ -2,6 +2,7 @@ import { IMAGE_PATH } from "@assets/utils/webImage";
 import FlexWrapper from "@components/FlexWrapper";
 import HeaderText from "@components/HeaderText";
 import EachAward from "./EachAward";
+
 const PriceAward = () => {
   return (
     <div className="my-5">
