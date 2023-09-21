@@ -16,6 +16,12 @@ import fire from "../image/fire.svg";
 import bronze from "../image/bronze_medal.png";
 import gold from "../image/gold_medal.png";
 import silver from "../image/silver_medal.png";
+import visual from "../image/6.png";
+import paybox from "../image/5.png";
+import whisper from "../image/4.png";
+import win from "../image/3.png";
+import libert from "../image/2.png";
+import ll from "../image/1.png";
 
 export const IMAGE_PATH = {
   man_Img_Banner: manOnGlass,
@@ -33,6 +39,12 @@ export const IMAGE_PATH = {
   goldImg: gold,
   silverImg: silver,
   bronzeImg: bronze,
+  visual: visual,
+  whisper: whisper,
+  win: win,
+  paybox: paybox,
+  libert: libert,
+  ll: ll
 };
 export const ICON = {
   timesImg: times,
