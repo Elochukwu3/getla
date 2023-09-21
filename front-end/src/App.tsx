@@ -5,6 +5,7 @@ import PageIntro from '@components/PageIntro';
 import PageRules from '@components/PageRules';
 import PageCriteria from '@components/PageCriteria';
 import Faq from '@components/Faq/Index';
+import PriceAward from '@components/PriceAward';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <PageRules/>
         <PageCriteria/>
         <Faq/>
+        <PriceAward/>
       </div>
     </>
   )
