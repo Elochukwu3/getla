@@ -24,6 +24,12 @@ import libert from "../image/2.png";
 import ll from "../image/1.png";
 import good from "../image/good.png";
 import lock from "../image/sec.png";
+import facebook from "../image/fb.png";
+import insta from "../image/insta.png";
+import linked from "../image/linked.png";
+import call from "../image/call.png";
+import x from "../image/x.png";
+import gp from "../image/gp.png";
 
 
 export const IMAGE_PATH = {
@@ -50,9 +56,16 @@ export const IMAGE_PATH = {
   ll: ll,
   lock: lock,
   good: good,
+
 };
 export const ICON = {
   timesImg: times,
   hambuger: ham,
   star: star,
+  facebook: facebook,
+  insta: insta,
+  linked:linked,
+  call: call,
+  x: x,
+  gp: gp
 };

@@ -8,12 +8,13 @@ import Faq from '@components/Faq/Index';
 import PriceAward from '@components/PriceAward';
 import Patner from '@components/Patner';
 import Policy from '@components/Policy';
+import Footer from '@components/Footer';
 
 function App() {
 
   return (
     <>
-      <div  className="min-h-screen py-5 bg-custom-purple">
+      <div  className="min-h-screen pt-5 bg-custom-purple">
         <NavBar/>
         <HomeBinder/>
        
@@ -24,6 +25,7 @@ function App() {
         <PriceAward/>
         <Patner/>
         <Policy/>
+        <Footer/>
       </div>
     </>
   )

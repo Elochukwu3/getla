@@ -16,6 +16,7 @@ export default {
         "custom-purple": "#150E28",
         "custom-light": "#903aff",
         "custom-highlight": "#d434fe",
+        "footer":"rgba(16, 11, 32, 1)"
       },
       textColor: {
         "custom-purple": "#150E28",
