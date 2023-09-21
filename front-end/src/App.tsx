@@ -7,6 +7,7 @@ import PageCriteria from '@components/PageCriteria';
 import Faq from '@components/Faq/Index';
 import PriceAward from '@components/PriceAward';
 import Patner from '@components/Patner';
+import Policy from '@components/Policy';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <Faq/>
         <PriceAward/>
         <Patner/>
+        <Policy/>
       </div>
     </>
   )

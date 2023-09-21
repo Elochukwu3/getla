@@ -22,6 +22,9 @@ import whisper from "../image/4.png";
 import win from "../image/3.png";
 import libert from "../image/2.png";
 import ll from "../image/1.png";
+import good from "../image/good.png";
+import lock from "../image/sec.png";
+
 
 export const IMAGE_PATH = {
   man_Img_Banner: manOnGlass,
@@ -44,7 +47,9 @@ export const IMAGE_PATH = {
   win: win,
   paybox: paybox,
   libert: libert,
-  ll: ll
+  ll: ll,
+  lock: lock,
+  good: good,
 };
 export const ICON = {
   timesImg: times,

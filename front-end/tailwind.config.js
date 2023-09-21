@@ -22,6 +22,7 @@ export default {
         "custom-light": "#903aff",
         "custom-highlight": "#d434fe",
         "custom-pp": "rgba(144, 58, 255, 1)",
+        "custom-lighter": "background: rgba(212, 52, 254, 1)  ",
       },
       backgroundImage: {
         "button-gradient":
