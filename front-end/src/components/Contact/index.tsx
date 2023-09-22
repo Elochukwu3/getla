@@ -50,34 +50,41 @@ function Contact() {
           <p>Let us know about it!</p>
         </div>
         <div className="hidden max-md:block w-11/2 mx-auto">Email us below to any question related to our event</div>
-        <div className="space-y-6">
+        <form className="space-y-6">
           <Input
             label="Team’s Name"
-            id="team"
-            placeholder="Enter the name of your group"
+            id="FirstName"
+            placeholder="Enter First Name"
             bool={true}
           />
           <Input
-            label="Project Topic"
-            id="Project"
-            placeholder="Enter your phone number"
+            label="Topic"
+            id="Topic"
+            placeholder="Enter your Topic"
             bool={true}
           />
+          <Input
+            label="Mail"
+            id="Mail"
+            placeholder="Enter your Email"
+            bool={true}
+            type="email"
+          />
           <textarea
-            name=""
-            id=""
+            name="message"
+            id="message"
             cols={20}
             rows={10}
             style={{ resize: "none", height: "150px" }}
             className="w-full block h-24 placeholder:text-zinc-600 p-4 bg-inherit border border-zinc-600 rounded-md outline-none"
           ></textarea>
          <div className="flex justify-center">
-             <Button caption="Submit"/>
+             <Button type="submit" caption="Submit"/>
          </div>
           <span className="text-3xl left-2 max-sm:text-sm text-custom-light bottom-1/4  absolute z-20">
           &#x2726;
         </span>
-        </div>
+        </form>
       </div>
       <span className="text-3xl max-sm:text-sm text-white bottom-0 right-0  absolute z-20">
           &#x2726;
