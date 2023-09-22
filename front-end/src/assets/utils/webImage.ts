@@ -30,6 +30,8 @@ import linked from "../image/linked.png";
 import call from "../image/call.png";
 import x from "../image/x.png";
 import gp from "../image/gp.png";
+import reg from "../image/reg.png";
+
 
 
 export const IMAGE_PATH = {
@@ -56,6 +58,7 @@ export const IMAGE_PATH = {
   ll: ll,
   lock: lock,
   good: good,
+  reg:reg,
 
 };
 export const ICON = {

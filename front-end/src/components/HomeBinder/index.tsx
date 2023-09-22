@@ -38,14 +38,14 @@ function HomeBinder() {
         <div className="md:pl-12 w-9/12  max-md:w-10/12  max-sm:text-center ">
           <div className="font-clash space-y-3 font-bold text-7xl max-md:text-5xl max-sm:text-4xl">
             <p>getlinked Tech</p>
-            <p className="flex items-end relative z-30 max-md:justify-center">
+            <p className="flex items-end relative z-30 max-md:justify-center h-24">
               Hackathon <span className="text-custom-highlight ">1.0</span>
               <img
                 src={IMAGE_PATH.chainImg}
                 alt=""
-                className="object-contian h-full max-md:scale-50 max-md:absolute right-28"
+                className="object-contain  max-md:scale-50 max-md:w-1/2 h-full"
               />
-              <img src={IMAGE_PATH.fireImg} alt="" className="max-md:scale-50"/>
+              <img src={IMAGE_PATH.fireImg} alt="" className="object-contain max-md:scle-50 max-md:w-1/2 "/>
             </p>
           </div>
           <p className="w-8/12 max-md:w-9/12 max-sm:w-full font-Montserrat mb-8">

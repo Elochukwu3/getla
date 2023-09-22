@@ -29,22 +29,22 @@ function NavBar() {
           <span className="text-custom-highlight">linked</span>
         </div>
         <ul
-          className={`md:flex w-8/12 z-30  justify-between items-center flex-row ${
+          className={`sm:font-bold md:font-normal md:flex w-8/12 z-40 md:text-lg md:gap-2 lg:text-xl text-2xl  justify-between items-center flex-row font-montserrat ${
             drop
               ? "max-md:overflow-hidden max-md:pt-20 max-md:px-10 max-md:max-md:block max-md:fixed max-md:space-y-10 max-md:inset-0 max-md:w-full  max-md:bg-custom-purple"
               : "max-md:hidden"
           }`}
         >
-          <li onClick={handler} className="cursor-pointer max-md:mt-10">
+          <li onClick={handler} className="cursor-pointer max-md:mt-10 hover:bg-button-gradient hover:bg-clip-text hover:text-transparent">
             Timeline
           </li>
-          <li onClick={handler} className="cursor-pointer">
+          <li onClick={handler} className="cursor-pointer hover:bg-button-gradient hover:bg-clip-text hover:text-transparent">
             Overview
           </li>
-          <li onClick={handler} className="cursor-pointer">
+          <li onClick={handler} className="cursor-pointer hover:bg-button-gradient hover:bg-clip-text hover:text-transparent">
             FAQs
           </li>
-          <li onClick={handler} className="cursor-pointer">
+          <li onClick={handler} className="cursor-pointer hover:bg-button-gradient hover:bg-clip-text hover:text-transparent">
             Contact
           </li>
           <Button caption={"Register"} />
