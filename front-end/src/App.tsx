@@ -10,6 +10,7 @@ import Patner from '@components/Patner';
 import Policy from '@components/Policy';
 import Footer from '@components/Footer';
 import Register from '@components/Register';
+import Contact from '@components/Contact';
 
 function App() {
 
@@ -27,7 +28,8 @@ function App() {
         <Patner/>
         <Policy/>
         <Footer/>
-        <Register/>
+        {/* <Register/> */}
+        <Contact/>
       </div>
     </>
   )

@@ -1,8 +1,8 @@
 import { prop } from "./type";
-function Input({ label, id, placeholder }: prop) {
+function Input({ label, id, placeholder, bool }: prop) {
   return (
     <div className="space-y-4 text-montserrat w-full bg-transparent">
-      <label className="block">{label}</label>
+      <label className={bool ? "hidden" : "block"}>{label}</label>
       <input
         type="text"
         id={id}
