@@ -3,10 +3,15 @@ import { IMAGE_PATH} from "@assets/utils/webImage";
 import Input from "@components/Input";
 import Category from "./Category";
 import Group from "./Group";
+import useSubmit from "./hook/useSubmit";
+import Load from "@components/Load";
 
 
 function Register() {
+ const { responseData, error, isLoading, submitForm } = useSubmit()
   return (
+    <>
+    {responseData && <Load bool={false}/>}
     <div className="grid grid-cols-2 w-10/12 lg:w-11/12 max-md:w-full max-md:grid-cols-1 mx-auto">
       <div className="relative">
         <img src={IMAGE_PATH.reg} alt="" />
@@ -20,7 +25,7 @@ function Register() {
               &#x2726;
             </span>
       </div>
-      <div className="text-white font-montserrat bg-move p-8 relative max-md:p-4 max-sm:p-4 w-full">
+      <form onSubmit={submitForm} className="text-white font-montserrat bg-move p-8 relative max-md:p-4 max-sm:p-4 w-full">
       <span className="text-3xl max-md:right-1 max-sm:text-sm text-zinc-500 top-5 right-1/4  absolute z-20">
               &#x2726;
             </span>
@@ -31,6 +36,8 @@ function Register() {
           <span>Be part of this movement!</span>
         </div>
         <p className="my-4 text-xl font-bold">CREATE YOUR ACCOUNT</p>
+        {error &&  <p className="my-2 textsm text-red-600">{error.message}</p>}
+
         <div className="space-y-8">
           <div className="flex justify-between w-full gap-3 max-sm:flex-col">
             <Input
@@ -51,7 +58,7 @@ function Register() {
               placeholder="Enter your email address"
             />
             <Input
-              label="Phonee"
+              label="Phone"
               id="phone"
               placeholder="What is your group project topic"
             />
@@ -71,10 +78,11 @@ function Register() {
           </span>
         </div>
         <div className="max-md:w-172 max-md:mx-auto">
-          <Button bool={true} caption="Register Now" />
+          <Button type="submit" bool={true} caption="Register Now" />
         </div>
-      </div>
+      </form>
     </div>
+    </>
   );
 }
 

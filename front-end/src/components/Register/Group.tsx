@@ -5,7 +5,7 @@ const Group = ()=>{
     return (
         <div className="w-full space-y-2">
         <p>Group Size</p>
-        <select className="w-full block  placeholder:text-zinc-600 p-4 bg-inherit border border-zinc-600 rounded-md outline-none">
+        <select id="group" className="w-full block  placeholder:text-zinc-600 p-4 bg-inherit border border-zinc-600 rounded-md outline-none">
           <option
             value={""}
             disabled
