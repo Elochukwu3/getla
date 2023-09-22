@@ -3,6 +3,7 @@ import Input from "@components/Input";
 import Button from "@components/button";
 import useSubmit from "./hook/useSubmit";
 import Load from "@components/Load";
+import Loader from "@components/Load/Loader";
 
 function Contact() {
     const { responseData, error, isLoading, submitForm }= useSubmit()
@@ -13,8 +14,8 @@ function Contact() {
 
   return (
    <>
-    {/* {responseData && <Load/>} */}
-    { <Load  bool={true}/>}
+    {responseData && <Load bool={true}/>}
+    {isLoading && <Loader/>}
    <div className="grid relative text-white grid-cols-2 my-5 w-10/12 lg:w-11/12 max-md:w-full max-md:grid-cols-1 mx-auto">
       <div className="flex max-md:hidden items-center w-full justify-center relative">
         <span className="text-3xl max-sm:text-sm text-custom-highlight top-0 left-1/3  absolute z-20">

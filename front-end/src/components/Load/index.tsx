@@ -7,7 +7,7 @@ type prop={
 function Load({ bool }:prop) {
   return (
     <div className="fixed backdrop-blur-0 bg-[#1b1635] opacity-80 z-50  w-full items-center inset-0 flex justify-center">
-      <div className="relative font-montserrat border border-custom-purple p-8 h-fit w-1/3 text-white text-center">
+      <div className="relative font-montserrat border border-custom-purple p-8 h-fit w-1/3 max-md:w-1/2 max-sm:w-10/12 text-white text-center">
         <div>
           <img
             src={IMAGE_PATH.grat}

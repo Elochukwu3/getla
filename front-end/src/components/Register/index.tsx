@@ -5,6 +5,7 @@ import Category from "./Category";
 import Group from "./Group";
 import useSubmit from "./hook/useSubmit";
 import Load from "@components/Load";
+import Loader from "@components/Load/Loader";
 
 
 function Register() {
@@ -12,6 +13,7 @@ function Register() {
   return (
     <>
     {responseData && <Load bool={false}/>}
+    {isLoading && <Loader/>}
     <div className="grid grid-cols-2 w-10/12 lg:w-11/12 max-md:w-full max-md:grid-cols-1 mx-auto">
       <div className="relative">
         <img src={IMAGE_PATH.reg} alt="" />
