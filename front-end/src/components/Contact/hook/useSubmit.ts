@@ -18,6 +18,7 @@ const useSubmit = () => {
     };
     if (email && topic && firstName && message) {
       sendData(data);
+      (e.target as HTMLFormElement).reset()
     }
   };
   return { responseData, error, isLoading, submitForm };

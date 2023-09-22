@@ -2,7 +2,6 @@ import useTimer from "./useTimer";
 
 function Timer() {
   const { hour, min, secs } = useTimer();
-  console.log(secs);
   
   return (
     <div className="my-9 font-unical text-5xl flex gap-3 max-md:justify-center">

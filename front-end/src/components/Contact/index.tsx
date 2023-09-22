@@ -1,10 +1,21 @@
 import { ICON } from "@assets/utils/webImage";
 import Input from "@components/Input";
 import Button from "@components/button";
+import useSubmit from "./hook/useSubmit";
+import Load from "@components/Load";
 
 function Contact() {
+    const { responseData, error, isLoading, submitForm }= useSubmit()
+    if(responseData){
+        console.log(responseData);
+        
+    }
+
   return (
-    <div className="grid relative text-white grid-cols-2 my-5 w-10/12 lg:w-11/12 max-md:w-full max-md:grid-cols-1 mx-auto">
+   <>
+    {/* {responseData && <Load/>} */}
+    { <Load  bool={true}/>}
+   <div className="grid relative text-white grid-cols-2 my-5 w-10/12 lg:w-11/12 max-md:w-full max-md:grid-cols-1 mx-auto">
       <div className="flex max-md:hidden items-center w-full justify-center relative">
         <span className="text-3xl max-sm:text-sm text-custom-highlight top-0 left-1/3  absolute z-20">
           &#x2726;
@@ -49,8 +60,9 @@ function Contact() {
 
           <p>Let us know about it!</p>
         </div>
+        <p className="text-red-700 text-sm">{error && error.message}</p>
         <div className="hidden max-md:block w-11/2 mx-auto">Email us below to any question related to our event</div>
-        <form className="space-y-6">
+        <form className="space-y-6" onSubmit={submitForm}>
           <Input
             label="Team’s Name"
             id="FirstName"
@@ -90,6 +102,7 @@ function Contact() {
           &#x2726;
         </span>
     </div>
+   </>
   );
 }
 

@@ -31,6 +31,7 @@ import call from "../image/call.png";
 import x from "../image/x.png";
 import gp from "../image/gp.png";
 import reg from "../image/reg.png";
+import grat from "../image/grat.png";
 
 
 
@@ -59,6 +60,7 @@ export const IMAGE_PATH = {
   lock: lock,
   good: good,
   reg:reg,
+  grat: grat
 
 };
 export const ICON = {

@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import Button from "../button";
 import { IMAGE_PATH, ICON } from "@assets/utils/webImage";
 import Timer from "@components/Timer";
