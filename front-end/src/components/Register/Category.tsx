@@ -5,7 +5,7 @@ const Category = ()=>{
     return (
         <div className="w-full space-y-2">
         <p>Category</p>
-        <select id="category" className="w-full block  placeholder:text-zinc-600 p-4 bg-inherit border border-zinc-600 rounded-md outline-none">
+        <select required id="category" className="w-full block  placeholder:text-zinc-600 p-4 bg-inherit border border-zinc-600 rounded-md outline-none">
           <option
             value={""}
             disabled

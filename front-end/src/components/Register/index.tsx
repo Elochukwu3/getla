@@ -72,7 +72,7 @@ function Register() {
           Please review your registration details before submitting
         </span>
         <div className="flex items-center bg-inherit my-5 text-sm gap-3">
-          <input type="checkbox" className="bg-inherit" />
+          <input type="checkbox" className="bg-inherit" required/>
           <span>
             I agreed with the event terms and conditions and privacy policy
           </span>

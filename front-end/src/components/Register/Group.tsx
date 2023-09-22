@@ -1,11 +1,10 @@
-import useCategory from "@components/Contact/hook/useCategory";
 
 const Group = ()=>{
     const numberOfGroup = Array.from({ length: 15 }, (_, i) => i + 1);
     return (
         <div className="w-full space-y-2">
         <p>Group Size</p>
-        <select id="group" className="w-full block  placeholder:text-zinc-600 p-4 bg-inherit border border-zinc-600 rounded-md outline-none">
+        <select required id="group" className="w-full block  placeholder:text-zinc-600 p-4 bg-inherit border border-zinc-600 rounded-md outline-none">
           <option
             value={""}
             disabled
