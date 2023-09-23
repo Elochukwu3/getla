@@ -52,6 +52,9 @@ export default {
       },
       width:{
         "sm":"95%"
+      },
+      screens:{
+        "mobile": "330px"
       }
     },
    

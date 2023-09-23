@@ -10,7 +10,7 @@ function App() {
     <>
       <div className="min-h-screen  bg-custom-purple overflow-x-hidden">
         <NavBar />
-        <div className="max-md:mx-auto  max-md:w-sm w-11/12">
+        <div className="max-md:mx-auto">
         <Routes>
          
           <Route path={ROUTES.home} element={<Home />} />
