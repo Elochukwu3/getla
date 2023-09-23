@@ -15,7 +15,7 @@ const Group = ()=>{
           </option>
           {numberOfGroup &&
             numberOfGroup.map((item) => (
-              <option value={item} className="bg-move text-white">
+              <option key={item} value={item} className="bg-move text-white">
                 {item}
               </option>
             ))}
