@@ -26,7 +26,7 @@ function Register() {
        className="relative max-lg:hidden block">
           <motion.div
     initial={{opacity: 0.7}}
-    animate={{opacity: 1}}
+    animate={{opacity: 0.8}}
     className="w-[20rem] h-[20rem] top-10 bg-[#470985] absolute z-20 rounded-full blur-2xl"
     >
       
@@ -55,7 +55,7 @@ function Register() {
           <span>Be part of this movement!</span>
         </div>
         <p className="my-4 text-xl font-bold">CREATE YOUR ACCOUNT</p>
-        {error &&  <p className="my-2 textsm text-red-600">{error.message}</p>}
+        {error &&  <p className="my-2 textsm text-red-600"> error occured, Try again.</p>}
 
         <div className="space-y-8">
           <div className="flex justify-between w-full gap-3 max-sm:flex-col">
