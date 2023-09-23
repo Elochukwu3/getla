@@ -9,7 +9,7 @@ import { scaler, starImageAnimation } from "@assets/utils/data";
 
 function HomeBinder() {
   return (
-    <div className="text-white border-b border-zinc-700 relative">
+    <div id="sect" className="text-white border-b border-zinc-700 relative">
       <motion.div
         initial={{ opacity: 0.7 }}
         animate={{ opacity: 0.8 }}

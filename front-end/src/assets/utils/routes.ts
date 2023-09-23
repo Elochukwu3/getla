@@ -5,5 +5,6 @@ export const ROUTES = {
     contact: "/contact",
     timeline: "timeline",
     overview: "overview",
-    fqq:"faq"
+    fqq:"faq",
+    "sect": "sect"
 }
