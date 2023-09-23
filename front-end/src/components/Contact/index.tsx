@@ -92,9 +92,9 @@ function Contact() {
             cols={20}
             rows={10}
             style={{ resize: "none", height: "150px" }}
-            className="w-full block h-24 placeholder:text-zinc-600 p-4 bg-inherit border border-zinc-600 rounded-md outline-none"
+            className="w-full relative z-30 block h-24 placeholder:text-zinc-600 p-4 bg-inherit border border-zinc-600 rounded-md outline-none"
           ></textarea>
-         <div className="flex justify-center">
+         <div className="flex justify-center relative z-30">
              <Button type="submit" caption="Submit"/>
          </div>
           <span className="text-3xl left-2 max-sm:text-sm text-custom-light bottom-1/4  absolute z-20">
