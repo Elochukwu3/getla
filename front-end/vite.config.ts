@@ -11,5 +11,6 @@ export default defineConfig({
       "@lib": "/src/lib",
       "@pages": "/src/pages",
     },
+    
   },
 })

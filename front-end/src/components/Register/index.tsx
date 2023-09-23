@@ -51,8 +51,9 @@ function Register() {
         <p className="text-custom-highlight font-clash font-bold text-2xl mb-8">
           Register
         </p>
-        <div className="text-sm">
+        <div className="text-sm flex gap-2 items-end">
           <span>Be part of this movement!</span>
+          <img src={IMAGE_PATH.mane}/>
         </div>
         <p className="my-4 text-xl font-bold">CREATE YOUR ACCOUNT</p>
         {error &&  <p className="my-2 textsm text-red-600"> error occured, Try again.</p>}

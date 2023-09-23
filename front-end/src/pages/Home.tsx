@@ -31,7 +31,7 @@ const Home = () => {
         <Link
           {...info}
           to={ROUTES.sect}
-          className="justify-center z-40 shadow-violet-800 shadow-md items-center text-2xl text-white font-bold w-8 h-8 flex  bg-custom-light rounded-full fixed cursor-pointer  bottom-20 right-10"
+          className="justify-center z-40 shadow-violet-800 shadow-md items-center text-2xl text-white font-bold w-8 h-8 flex  bg-custom-light rounded-full fixed cursor-pointer  bottom-20 right-10 max-sm:right-5"
         >
           &uarr;
         </Link>
