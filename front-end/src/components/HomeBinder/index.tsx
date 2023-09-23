@@ -4,22 +4,24 @@ import { IMAGE_PATH, ICON } from "@assets/utils/webImage";
 import Timer from "@components/Timer";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { scaler, starImageAnimation } from "@assets/utils/data";
+
 
 function HomeBinder() {
   return (
-    <div className="text-white border-b border-zinc-700 relative">
-      <motion.div
-        initial={{ opacity: 0.7 }}
-        animate={{ opacity: 1 }}
-        className="w-[14rem] h-[15rem] z-10 absolute left-[16rem] -top-20 bg-[#470985] rounded-full blur-2xl"
-      ></motion.div>
-      <div className="flex mx-auto w-11/12 justify-between max-md:flex-col-reverse max-md:text-2xl max-sm:text-lg text-3xl font-bold italic font-montserrat text-white">
-        <img
-          src={ICON.star}
-          className="object-contain w-fit h-fit max-md:-scale-y-50 max-md:pl-20"
+    <div id="sect" className="text-white border-b border-zinc-700 relative">
+      <div
+        className="opacity-75 max-sm:opacity-50 w-[14rem] h-[15rem] max-md:hidden z-10 absolute left-[16rem] -top-20 bg-[#470985] 
+        rounded-full blur-2xl"
+     />
+      <div className="flex mx-auto w-11/12 justify-between max-md:flex-col-reverse max-md:text-2xl  max-sm:text-base text-3xl font-bold italic font-montserrat text-white">
+        <motion.img
+         src={ICON.star}
+         {...starImageAnimation}
+         className="object-contain w-fit h-fit max-md:h-5 max-md:pl-20 max-md:scale-50 max-md:opacity-70"
         />
-        <div>
-          <span className="flex  max-md:justify-center">
+        <div style={{ whiteSpace: 'nowrap' }}  className="z-10 max-mobile:scale-75">
+          <span className="flex gap-2 max-md:justify-center">
             <motion.span
             initial={{ translateX: 200 }}
             whileInView={{ translateX: 0 }}
@@ -27,9 +29,9 @@ function HomeBinder() {
             >
               Igniting a Revolution in
             </motion.span>
-            <p className="relative block"
+            <p className="relative block "
             >
-              <motion.span className="relativ block"
+              <motion.span className="relative"
             initial={{ translateX: 200 }}
             whileInView={{ translateX: 0 }}
             transition={{ duration: 0.5, type: "tween" }}
@@ -54,21 +56,28 @@ function HomeBinder() {
           </span>
         </div>
       </div>
-      <div className="flex max-md:flex-col max-md:items-center mt-12 ">
+      <div className="flex max-md:flex-col z-30 relative max-md:items-center mt-12 ">
         <div className="md:pl-12 w-9/12  max-md:w-10/12  max-sm:text-center ">
-          <div className="font-clash space-y-3 font-bold text-7xl max-md:text-5xl max-sm:text-4xl">
+          <motion.div 
+            initial={{ translateX: 200 }}
+            whileInView={{ translateX: 0 }}
+            transition={{ duration: 0.5, type: "tween" }}
+          className="font-clash space-y-3 font-bold text-7xl max-md:text-5xl max-sm:text-4xl relative">
+          <div
+        className="w-[16rem] opacity-60 h-[15rem] -left-[4rem] max-md:block hidden z-10 absolute  top-0 bg-[#470985] rounded-full blur-2xl"
+      />
             <p>getlinked Tech</p>
-            <p className="flex items-end relative z-30 max-md:justify-center h-24">
+            <p className="flex items-end h-16 relative z-30 max-md:justify-center">
               Hackathon <span className="text-custom-highlight ">1.0</span>
               <img
                 src={IMAGE_PATH.chainImg}
                 alt=""
-                className="object-contain  max-md:scale-50 max-md:w-1/2 h-full"
+                className="object-contain max-sm:h-1/2 max-md:h-4/5"
               />
-              <img src={IMAGE_PATH.fireImg} alt="" className="object-contain max-md:scle-50 max-md:w-1/2 "/>
+              <img src={IMAGE_PATH.fireImg} alt="" className="object-contain  max-sm:h-1/2"/>
             </p>
-          </div>
-          <p className="w-8/12 max-md:w-9/12 max-sm:w-full font-Montserrat mb-8">
+          </motion.div>
+          <p className="w-8/12 z-30 relative max-md:w-9/12 max-sm:w-full font-Montserrat mb-8">
             Participate in getlinked tech Hackathon 2023 stand a chance to win a
             Big prize
           </p>
@@ -87,7 +96,15 @@ function HomeBinder() {
           </div>
         </div>
         <div className="relative">
-          <img src={IMAGE_PATH.man_Img_Banner} alt="" className=" grayscale" />
+        <motion.div
+        initial={{ opacity: 0.6 }}
+        animate={{ opacity: 0.7 }}
+        className="w-[14rem] h-[15rem] z-10 absolute right-0 -top-5 bg-[#470985] 
+        rounded-full blur-2xl"
+      ></motion.div>
+          <motion.img
+          {...scaler}
+           src={IMAGE_PATH.man_Img_Banner} alt="" className=" grayscale" />
           <img
             src={IMAGE_PATH.moonImg}
             alt=""

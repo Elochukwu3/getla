@@ -1,5 +1,11 @@
+import { info } from "@assets/utils/data";
+import { ROUTES } from "@assets/utils/routes";
 import { ICON } from "@assets/utils/webImage";
+import { Link as LinkRoute } from "react-router-dom";
+import { Link } from "react-scroll";
+
 const Footer = () => {
+  
   return (
     <div className=" font-montserrat text-white mt-14 bg-footer py-10 mb-0 relative">
          <span className="text-xl left-14 max-sm:left-4 max-sm:inline max-sm:text-sm text-white top-1/4 max-sm:top-20 max-md:hidden block  absolute z-20">
@@ -7,11 +13,11 @@ const Footer = () => {
             </span>
       <div className=" w-10/12 max-sm:w-full max-sm:pl-10 mx-auto grid grid-cols-4 mb-5 max-md:grid-cols-1 max-sm:space-y-12">
         <div className="col-span-2 max-sm:col-span-1 pr-12 max-md:pr-0">
-          <div className="font-clash text-3xl font-bold">
+          <div className="font-clash text-3xl font-bold my-6 ">
             <span>get</span>
             <span className="text-custom-highlight">linked</span>
           </div>
-          <p className="flex flex-col gap-10">
+          <p className="flex flex-col gap-10 max-sm:text-sm pr-3">
             <span>
             Getlinked Tech Hackathon is a technology innovation program
             established by a group of organizations with the aim of showcasing
@@ -28,17 +34,25 @@ const Footer = () => {
               &#x2726;
             </span>
           <p className="text-custom-highlight">Useful Links</p>
-          <p>Overview</p>
-          <p>Timeline</p>
-          <p>FAQs</p>
-          <p>Register</p>
+          <Link {...info} className="block cursor-pointer" to={ROUTES.overview}>Overview</Link>
+          <Link {...info} className="block cursor-pointer" to={ROUTES.timeline}>Timeline</Link>
+          <Link {...info} className="block cursor-pointer" to={ROUTES.fqq}>FAQs</Link>
+          <Link {...info} className="block cursor-pointer" to={ROUTES.register}>Register</Link>
           <div className="flex gap-4 items-center">
             <p className="text-custom-highlight">Follow us</p>
             <div className="flex items-center gap-3 object-contain">
+              <LinkRoute to={"https://getlinked.ai"}>
                 <img src={ICON.insta} alt="" />
+              </LinkRoute>
+              <LinkRoute to={"https://getlinked.ai"}>
                 <img src={ICON.x} alt="" />
+              </LinkRoute>
+              <LinkRoute to={"https://romauld.vercel.app/"}>
                 <img src={ICON.facebook} alt="" />
+              </LinkRoute>
+              <LinkRoute to={"https://getlinked.ai"}>
                 <img src={ICON.linked} alt="" />
+              </LinkRoute>
             </div>
           </div>
         </div>
@@ -66,7 +80,10 @@ const Footer = () => {
       <span className="text-xl max-sm:text-sm text-custom-highlight textt-center block pb-4">
               &#x2726;
             </span>
-        All rights reserved. © getlinked Ltd.</div>
+            < LinkRoute to={"https://getlinked.ai"}>
+            All rights reserved. © getlinked Ltd.
+            </LinkRoute>
+        </div>
     </div>
   );
 };

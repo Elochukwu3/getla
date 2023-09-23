@@ -17,7 +17,8 @@ export default {
         "custom-light": "#903aff",
         "custom-highlight": "#d434fe",
         "footer":"rgba(16, 11, 32, 1)",
-        "move": "#1c152e"
+        "move": "#1c152e",
+        "awards": "background: rgba(21, 14, 40, 1)",
       },
       textColor: {
         "custom-purple": "#150E28",
@@ -52,6 +53,9 @@ export default {
       },
       width:{
         "sm":"95%"
+      },
+      screens:{
+        "mobile": "330px"
       }
     },
    

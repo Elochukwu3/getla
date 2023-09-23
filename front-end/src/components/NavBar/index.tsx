@@ -1,37 +1,21 @@
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import Button from "../button";
 import { ICON } from "@assets/utils/webImage";
-import { Link as LoutLink } from "react-router-dom";
+import { Link as LoutLink} from "react-router-dom";
 import { ROUTES } from "@assets/utils/routes";
 import { Link } from "react-scroll";
+import useFuns from "./useFun";
+import { info } from "@assets/utils/data";
 
 function NavBar() {
-  const [drop, setDrop] = useState<Boolean>(false);
-  const handler = (): void => {
-    setDrop(!drop);
-  };
+  const [drop, setDrop] = useState<Boolean>(false);  
+ const {handler} = useFuns(setDrop);
+ const btnHandle = ()=> handler(drop);
+ 
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 768) {
-        setDrop(false);
-      }
-      setDrop(false);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  const info = {
-    spy: true,
-    smooth: true,
-    duration: 1000,
-  };
 
   return (
-    <div className="border-b border-zinc-700 text-white py-4 max-md:px-5 mb-10">
+    <div className="border-b border-zinc-700 text-white md:p-8 py-4 max-md:px-5 mb-10">
       <nav className="md:w-11/12 mx-auto  flex justify-between items-center text-white">
         <Link to={ROUTES.home} className=" flex font-clash text-4xl">
           <span className="text-white">get</span>
@@ -47,36 +31,35 @@ function NavBar() {
           <Link
         {... info}
             to={ROUTES.timeline}
-            onClick={handler}
-            className="block  max-md:mt-10 hover:bg-button-gradient hover:bg-clip-text hover:text-transparent"
+            onClick={btnHandle}
+            className="block cursor-pointer  max-md:mt-10 hover:bg-button-gradient hover:bg-clip-text hover:text-transparent"
           >
             Timeline
           </Link>
           <Link
            {... info}
             to={ROUTES.overview}
-            onClick={handler}
-            className="block  hover:bg-button-gradient hover:bg-clip-text hover:text-transparent"
+            onClick={btnHandle}
+            className="block cursor-pointer hover:bg-button-gradient hover:bg-clip-text hover:text-transparent"
           >
             Overview
           </Link>
           <Link
            {... info}
             to={ROUTES.fqq}
-            onClick={handler}
-            className="block  hover:bg-button-gradient hover:bg-clip-text hover:text-transparent"
+            onClick={btnHandle}
+            className="block cursor-pointer hover:bg-button-gradient hover:bg-clip-text hover:text-transparent"
           >
             FAQs
           </Link>
-          <Link
-           {... info}
+          <LoutLink
             to={ROUTES.contact}
-            onClick={handler}
-            className=" block hover:bg-button-gradient hover:bg-clip-text hover:text-transparent"
+            onClick={()=>setDrop(!drop)} 
+             className=" block hover:bg-button-gradient hover:bg-clip-text hover:text-transparent"
           >
             Contact
-          </Link>
-          <LoutLink to={ROUTES.register} className="block">
+          </LoutLink>
+          <LoutLink to={ROUTES.register} className="block" onClick={()=>setDrop(!drop)}>
             <Button caption={"Register"} />
           </LoutLink>
         </ul>
@@ -84,7 +67,7 @@ function NavBar() {
           className={`md:hidden flex justify-center  p-3px  z-40 cursor-pointer rounded-full ${
             drop && "bg-button-gradient"
           }`}
-          onClick={handler}
+          onClick={btnHandle}
         >
           <img
             alt=""
