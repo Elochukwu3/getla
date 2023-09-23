@@ -32,6 +32,7 @@ import x from "../image/x.png";
 import gp from "../image/gp.png";
 import reg from "../image/reg.png";
 import grat from "../image/grat.png";
+import mane from "../image/mane.png";
 
 
 
@@ -60,7 +61,8 @@ export const IMAGE_PATH = {
   lock: lock,
   good: good,
   reg:reg,
-  grat: grat
+  grat: grat,
+  mane:mane
 
 };
 export const ICON = {
