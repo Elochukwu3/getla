@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import Button from "../button";
 import { ICON } from "@assets/utils/webImage";
+import { Link as LoutLink } from "react-router-dom";
+import { ROUTES } from "@assets/utils/routes";
+import { Link } from "react-scroll";
 
 function NavBar() {
   const [drop, setDrop] = useState<Boolean>(false);
@@ -21,13 +24,19 @@ function NavBar() {
     };
   }, []);
 
+  const info = {
+    spy: true,
+    smooth: true,
+    duration: 1000,
+  };
+
   return (
-    <div className="border-b border-zinc-700 text-white py-4 max-md:px-5">
+    <div className="border-b border-zinc-700 text-white py-4 max-md:px-5 mb-10">
       <nav className="md:w-11/12 mx-auto  flex justify-between items-center text-white">
-        <div className="flex font-clash text-4xl">
+        <Link to={ROUTES.home} className=" flex font-clash text-4xl">
           <span className="text-white">get</span>
           <span className="text-custom-highlight">linked</span>
-        </div>
+        </Link>
         <ul
           className={`sm:font-bold md:font-normal md:flex w-8/12 z-40 md:text-lg md:gap-2 lg:text-xl text-2xl  justify-between items-center flex-row font-montserrat ${
             drop
@@ -35,19 +44,41 @@ function NavBar() {
               : "max-md:hidden"
           }`}
         >
-          <li onClick={handler} className="cursor-pointer max-md:mt-10 hover:bg-button-gradient hover:bg-clip-text hover:text-transparent">
+          <Link
+        {... info}
+            to={ROUTES.timeline}
+            onClick={handler}
+            className="block  max-md:mt-10 hover:bg-button-gradient hover:bg-clip-text hover:text-transparent"
+          >
             Timeline
-          </li>
-          <li onClick={handler} className="cursor-pointer hover:bg-button-gradient hover:bg-clip-text hover:text-transparent">
+          </Link>
+          <Link
+           {... info}
+            to={ROUTES.overview}
+            onClick={handler}
+            className="block  hover:bg-button-gradient hover:bg-clip-text hover:text-transparent"
+          >
             Overview
-          </li>
-          <li onClick={handler} className="cursor-pointer hover:bg-button-gradient hover:bg-clip-text hover:text-transparent">
+          </Link>
+          <Link
+           {... info}
+            to={ROUTES.fqq}
+            onClick={handler}
+            className="block  hover:bg-button-gradient hover:bg-clip-text hover:text-transparent"
+          >
             FAQs
-          </li>
-          <li onClick={handler} className="cursor-pointer hover:bg-button-gradient hover:bg-clip-text hover:text-transparent">
+          </Link>
+          <Link
+           {... info}
+            to={ROUTES.contact}
+            onClick={handler}
+            className=" block hover:bg-button-gradient hover:bg-clip-text hover:text-transparent"
+          >
             Contact
-          </li>
-          <Button caption={"Register"} />
+          </Link>
+          <LoutLink to={ROUTES.register} className="block">
+            <Button caption={"Register"} />
+          </LoutLink>
         </ul>
         <span
           className={`md:hidden flex justify-center  p-3px  z-40 cursor-pointer rounded-full ${

@@ -5,6 +5,7 @@ const useSubmit = () => {
   const { responseData, error, isLoading, sendData } = useRegister();
 
   const submitForm = (e: React.FormEvent<HTMLFormElement>) => {
+    
     e.preventDefault();
     const team = (e.target as HTMLFormElement).team.value;
     const Project = (e.target as HTMLFormElement).Project.value;
@@ -12,7 +13,7 @@ const useSubmit = () => {
     const phone = (e.target as HTMLFormElement).phone.value;
     const category = (e.target as HTMLFormElement).category.value;
     const group = (e.target as HTMLFormElement).group.value;
-    const check = (e.target as HTMLFormElement).checked;
+    const check = (e.target as HTMLFormElement).checked.checked;
 
     const data = {
       id: Number(id),

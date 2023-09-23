@@ -49,8 +49,12 @@ export default {
       borderColor:{
         'custom-purple': "rgba(144, 58, 255, 1)",
         'custom-pink': "rgba(212, 52, 254, 1)",
+      },
+      width:{
+        "sm":"95%"
       }
     },
+   
   },
   plugins: [],
 };

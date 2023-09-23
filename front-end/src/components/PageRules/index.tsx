@@ -1,6 +1,7 @@
 import { ICON, IMAGE_PATH } from "@assets/utils/webImage";
 import { PAGE_TEXT } from "@assets/utils/webText";
 import HeaderText from "@components/HeaderText";
+import { motion } from "framer-motion";
 
 const PageRules = () => {
   return (
@@ -9,11 +10,16 @@ const PageRules = () => {
         <img src={IMAGE_PATH.womanImg} alt="" className="" />
       </div>
       <div className="flex- w-1/2 max-md:w-full max-md:text-center relative">
-        <div className="mb-4">
+      <motion.div
+        initial={{ opacity: 0.7 }}
+        animate={{ opacity: 1 }}
+        className="w-[20rem] h-[20rem] z-10 absolute left-10 top-0 bg-[#470985] opacity-5 rounded-full blur-3xl"
+      ></motion.div>
+        <div className="mb-4 relative z-10">
             <img src={ICON.star} alt="" className="grayscale invert-60 w-5 h-5 mx-auto block mb-5 max-md:absolute max-md:-right-4 max-md:top-7" />
           <HeaderText header1=" Rules and" header2="Guidelines" />
         </div>
-        <p>{PAGE_TEXT.rulestext}</p>
+        <p className=" relative z-10">{PAGE_TEXT.rulestext}</p>
         <img
           src={ICON.star}
           alt=""

@@ -1,10 +1,18 @@
+import { ROUTES } from "@assets/utils/routes";
 import Button from "../button";
 import { IMAGE_PATH, ICON } from "@assets/utils/webImage";
 import Timer from "@components/Timer";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function HomeBinder() {
   return (
-    <div className="text-white border-b border-zinc-700">
+    <div className="text-white border-b border-zinc-700 relative">
+      <motion.div
+        initial={{ opacity: 0.7 }}
+        animate={{ opacity: 1 }}
+        className="w-[14rem] h-[15rem] z-10 absolute left-[16rem] -top-20 bg-[#470985] rounded-full blur-2xl"
+      ></motion.div>
       <div className="flex mx-auto w-11/12 justify-between max-md:flex-col-reverse max-md:text-2xl max-sm:text-lg text-3xl font-bold italic font-montserrat text-white">
         <img
           src={ICON.star}
@@ -12,10 +20,23 @@ function HomeBinder() {
         />
         <div>
           <span className="flex  max-md:justify-center">
-            Igniting a Revolution in
-            <span className="relative block">
+            <motion.span
+            initial={{ translateX: 200 }}
+            whileInView={{ translateX: 0 }}
+            transition={{ duration: 0.5, type: "tween" }}
+            >
+              Igniting a Revolution in
+            </motion.span>
+            <p className="relative block"
+            >
+              <motion.span className="relativ block"
+            initial={{ translateX: 200 }}
+            whileInView={{ translateX: 0 }}
+            transition={{ duration: 0.5, type: "tween" }}
+            >
               {" "}
               HR Innovation
+              </motion.span>
               <svg
                 className="w-60 max-md:w-44 max-sm:w-28"
                 height="17"
@@ -29,7 +50,7 @@ function HomeBinder() {
                   strokeWidth="5"
                 />
               </svg>
-            </span>
+            </p>
           </span>
         </div>
       </div>
@@ -51,7 +72,9 @@ function HomeBinder() {
             Participate in getlinked tech Hackathon 2023 stand a chance to win a
             Big prize
           </p>
+          <Link to={ROUTES.register}>
           <Button caption={"register"} />
+          </Link>
           <div className="w-7/12 mt-20 md:block hidden">
             <img
               src={ICON.star}

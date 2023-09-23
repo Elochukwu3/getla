@@ -2,14 +2,20 @@ import { IMAGE_PATH } from "@assets/utils/webImage";
 import FlexWrapper from "@components/FlexWrapper";
 import HeaderText from "@components/HeaderText";
 import Button from "@components/button";
+import { motion } from "framer-motion";
 
 const Policy = () => {
   return (
     <div className="w-10/12 max-md:w-full mx-auto font-montserrat">
       <FlexWrapper>
-        <div className="w-1/2 max-md:w-full ">
-          <div >
-            <div className="relative">
+        <div className="w-1/2 max-md:w-full relative pb-14">
+       <motion.div
+        initial={{ opacity: 0.7 }}
+        animate={{ opacity: 1 }}
+        className="w-[15rem] h-[15rem] z-10 absolute left-0 -bottom-[2rem] bg-[#470985] rounded-full blur-2xl"
+      ></motion.div>
+          <div className="relative z-20">
+            <div className="relative z-20">
             <span className="text-2xl max-md:text-xl max-sm:text-sm text-zinc-700 max-md:-top-6 top-0 text-grey right-1/3  absolute z-20">
               &#x2726;
             </span>

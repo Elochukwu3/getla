@@ -1,4 +1,6 @@
 import { IMAGE_PATH } from "@assets/utils/webImage";
+import { Link} from "react-router-dom";
+import { ROUTES } from "@assets/utils/routes";
 import Button from "@components/button";
 type prop={
     bool: Boolean
@@ -27,9 +29,9 @@ function Load({ bool }:prop) {
               </div>
             </div>
           )}
-          <div className="w-full my-10 z-50">
+          <Link to={ROUTES.home} className="w-full my-10 z-50 block">
             <Button caption="Back" bool={true} />
-          </div>
+          </Link>
         </div>
       </div>
     </div>

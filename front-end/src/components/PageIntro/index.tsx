@@ -4,7 +4,7 @@ import HeaderText from "@components/HeaderText";
 
 const PageIntro = () => {
   return (
-    <div className="border-b gap-5 border-zinc-700 flex max-md:flex-col items-center py-8 w-11/1 px-10 text-white font-montserrat mx-auto">
+    <div id="overview" className="border-b gap-5 border-zinc-700 flex max-md:flex-col items-center py-8 w-11/1 px-10 text-white font-montserrat mx-auto">
       <div className="w-1/2 max-md:w-full relative">
         <img src={ICON.star} alt="" className="absolute z-10 -left-5 scale-50 top-1/3" />
         <img src={IMAGE_PATH.bulbImg} alt="" className="" />

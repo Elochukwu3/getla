@@ -23,5 +23,12 @@
       0px 1px 0px #fe3496,   /* Bottom shadow */
       0px -1px 0px #fe3496;  /* Top shadow */
 }
+.linked_border {
+  border-bottom: 0px solid rgba(255, 255, 255, 0.18)
+}
 
-  
+.round_color {
+  background: linear-gradient(270deg, #903AFF 0%, #D434FE 100%);
+
+}
+

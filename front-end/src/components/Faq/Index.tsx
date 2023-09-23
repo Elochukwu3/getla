@@ -5,8 +5,8 @@ import HeaderText from "@components/HeaderText";
 
 const Faq = () => {
   return (
-    <FlexWrapper className="md:gap-10 py-10 ">
-      <div className="w-1/2 max-md:w-full max-md:my-10">
+    <FlexWrapper className="md:gap-10 py-[5rem] relative z-10">
+      <div id="faq" className="w-1/2 max-md:w-full max-md:my-10">
         <span className="text-3xl mb-3 text-custom-light block ">&#x2726;</span>
         <div className="max-md:text-cnter w-full mb-10 ">
           <HeaderText header1="Frequently Ask" header2="Question" />
