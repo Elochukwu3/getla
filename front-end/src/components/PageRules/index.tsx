@@ -14,11 +14,9 @@ const PageRules = () => {
         <img src={IMAGE_PATH.womanImg} alt="" className="" />
       </motion.div>
       <div className="flex- w-1/2 max-md:w-full max-md:text-center relative">
-      <motion.div
-        initial={{ opacity: 0.7 }}
-        animate={{ opacity: 1 }}
-        className="w-[20rem] h-[20rem] z-10 absolute left-10 top-0 bg-[#470985] opacity-5 rounded-full blur-3xl"
-      ></motion.div>
+      <div
+        className="w-[20rem] h-[20rem] opacity-50 z-10 absolute left-10 top-0 bg-[#470985] rounded-full blur-3xl"
+      />
         <div className="mb-4 relative z-10">
             <img src={ICON.star} alt="" className="grayscale invert-60 w-5 h-5 mx-auto block mb-5 max-md:absolute max-md:-right-4 max-md:top-7" />
           <HeaderText header1=" Rules and" header2="Guidelines" />

@@ -12,7 +12,6 @@ function App() {
         <NavBar />
         <div className="max-md:mx-auto">
         <Routes>
-         
           <Route path={ROUTES.home} element={<Home />} />
           <Route path={ROUTES.register} element={ <Reg/>} />
           <Route path={ROUTES.contact} element={<Contact />} />
