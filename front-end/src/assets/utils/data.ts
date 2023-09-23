@@ -14,3 +14,9 @@ export const starImageAnimation = {
      transition : { duration: 0.5, damping:10}
   }
   
+  export const scalerTwo = {
+    initial : { scale: 1 },
+    whileInView : { scale: 0.75 },
+     transition : { duration: 0.5, damping:10}
+  }
+  

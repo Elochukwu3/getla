@@ -10,12 +10,10 @@ import { scaler, starImageAnimation } from "@assets/utils/data";
 function HomeBinder() {
   return (
     <div id="sect" className="text-white border-b border-zinc-700 relative">
-      <motion.div
-        initial={{ opacity: 0.7 }}
-        animate={{ opacity: 0.8 }}
-        className="w-[14rem] h-[15rem] max-md:hidden z-10 absolute left-[16rem] -top-20 bg-[#470985] 
+      <div
+        className="opacity-75 max-sm:opacity-50 w-[14rem] h-[15rem] max-md:hidden z-10 absolute left-[16rem] -top-20 bg-[#470985] 
         rounded-full blur-2xl"
-      ></motion.div>
+     />
       <div className="flex mx-auto w-11/12 justify-between max-md:flex-col-reverse max-md:text-2xl  max-sm:text-base text-3xl font-bold italic font-montserrat text-white">
         <motion.img
          src={ICON.star}
@@ -65,10 +63,9 @@ function HomeBinder() {
             whileInView={{ translateX: 0 }}
             transition={{ duration: 0.5, type: "tween" }}
           className="font-clash space-y-3 font-bold text-7xl max-md:text-5xl max-sm:text-4xl relative">
-          <motion.div
-        initial={{ opacity: 0.7 }}
-        className="w-[16rem] h-[15rem] -left-[4rem] opacity-10 max-md:block hidden z-10 absolute  top-0 bg-[#470985] rounded-full blur-2xl"
-      ></motion.div>
+          <div
+        className="w-[16rem] opacity-60 h-[15rem] -left-[4rem] max-md:block hidden z-10 absolute  top-0 bg-[#470985] rounded-full blur-2xl"
+      />
             <p>getlinked Tech</p>
             <p className="flex items-end h-16 relative z-30 max-md:justify-center">
               Hackathon <span className="text-custom-highlight ">1.0</span>
@@ -100,8 +97,8 @@ function HomeBinder() {
         </div>
         <div className="relative">
         <motion.div
-        initial={{ opacity: 0.7 }}
-        animate={{ opacity: 0.8 }}
+        initial={{ opacity: 0.6 }}
+        animate={{ opacity: 0.7 }}
         className="w-[14rem] h-[15rem] z-10 absolute right-0 -top-5 bg-[#470985] 
         rounded-full blur-2xl"
       ></motion.div>

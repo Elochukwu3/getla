@@ -1,3 +1,4 @@
+import { scaler } from "@assets/utils/data";
 import { IMAGE_PATH } from "@assets/utils/webImage";
 import FlexWrapper from "@components/FlexWrapper";
 import HeaderText from "@components/HeaderText";
@@ -6,14 +7,12 @@ import { motion } from "framer-motion";
 
 const Policy = () => {
   return (
-    <div className="w-10/12 max-md:w-full mx-auto font-montserrat">
-      <FlexWrapper>
-        <div className="w-1/2 max-md:w-full relative pb-14">
-       <motion.div
-        initial={{ opacity: 0.7 }}
-        animate={{ opacity: 1 }}
-        className="w-[15rem] h-[15rem] z-10 absolute left-0 -bottom-[2rem] bg-[#470985] rounded-full blur-2xl"
-      ></motion.div>
+    <motion.div {...scaler} className="w-10/12 max-xl:w-full max-lg:w-full max-md:w-full mx-auto font-montserrat">
+      <FlexWrapper bool={true}>
+        <div className="w-1/2 max-md:w-full  relative pb-14">
+       <div
+        className="w-[20rem] opacity-60 h-[15rem] z-10 absolute -left-20 -bottom-[2rem] bg-[#470985] rounded-full blur-2xl"
+      />
           <div className="relative z-20">
             <div className="relative z-20">
             <span className="text-2xl max-md:text-xl max-sm:text-sm text-zinc-700 max-md:-top-6 top-0 text-grey right-1/3  absolute z-20">
@@ -93,7 +92,7 @@ const Policy = () => {
             </span>
         </div>
       </FlexWrapper>
-    </div>
+    </motion.div>
   );
 };
 

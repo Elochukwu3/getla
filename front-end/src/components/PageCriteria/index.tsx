@@ -8,20 +8,18 @@ function PageCriteria() {
   return (
     <>
       <FlexWrapper>
-        <div className="flex- w-1/2 max-md:w-full   ">
-          <img src={IMAGE_PATH.humanImg} alt="" className="relative z-10"/>
+        <div className="flex- w-1/2 max-md:w-full relative  shrink-0">
+          <img src={IMAGE_PATH.humanImg} alt="" className="relative z-10 shrink-0"/>
           <motion.div
-        initial={{ opacity: 0.7 }}
-        animate={{ opacity: 1 }}
-        className="w-[20rem] h-[10rem] absolute left-0 bottom-0 -max-sm:bottom-5 bg-[#470985] rounded-full blur-2xl"
+        initial={{ opacity: 0.5 }}
+        animate={{ opacity: 0.7 }}
+        className="w-[20rem] h-[15rem] max-2xl:bottom-14 max-xl:bottom-20 max-lg:bottom-3 max-md:bottom-0 absolute left-0 bottom-0 -max-sm:bottom-5 bg-[#470985] rounded-full blur-2xl"
       ></motion.div>
         </div>
         <div className="flex- w-1/2 max-md:w-full max-md:text-center space-y-5 relative py-14">
-        <motion.div
-        initial={{ opacity: 0.7 }}
-        animate={{ opacity: 1 }}
-        className="w-[15rem] h-[15rem] z-10 absolute right-0 -bottom-[10rem] bg-[#470985] max-md:hidden rounded-full blur-2xl"
-      ></motion.div>
+        <div
+        className="w-[15rem] opacity-75 max-sm:opacity-50 h-[15rem] z-10 absolute right-0 -bottom-[10rem] bg-[#470985] max-md:hidden rounded-full blur-2xl"
+     />
           <HeaderText header1="Judging Criteria" header2="Key attributes " />
           {PAGE_TEXT.judgingCriteria.map((item) => (
             <p className="relative z-10">
