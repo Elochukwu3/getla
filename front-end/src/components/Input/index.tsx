@@ -1,7 +1,7 @@
 import { prop } from "./type";
 function Input({ label, id, placeholder, bool, type }: prop) {
   return (
-    <div className="space-y-4 text-montserrat w-full bg-transparent">
+    <div className="space-y-4 text-montserrat w-full bg-transparent relative z-30">
       <label className={bool ? "hidden" : "block"}>{label}</label>
       <input
       required
