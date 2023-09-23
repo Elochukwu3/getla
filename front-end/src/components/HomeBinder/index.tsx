@@ -4,7 +4,7 @@ import { IMAGE_PATH, ICON } from "@assets/utils/webImage";
 import Timer from "@components/Timer";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { starImageAnimation } from "@assets/utils/data";
+import { scaler, starImageAnimation } from "@assets/utils/data";
 
 
 function HomeBinder() {
@@ -60,22 +60,26 @@ function HomeBinder() {
       </div>
       <div className="flex max-md:flex-col z-30 relative max-md:items-center mt-12 ">
         <div className="md:pl-12 w-9/12  max-md:w-10/12  max-sm:text-center ">
-          <div className="font-clash space-y-3 font-bold text-7xl max-md:text-5xl max-sm:text-4xl relative">
+          <motion.div 
+            initial={{ translateX: 200 }}
+            whileInView={{ translateX: 0 }}
+            transition={{ duration: 0.5, type: "tween" }}
+          className="font-clash space-y-3 font-bold text-7xl max-md:text-5xl max-sm:text-4xl relative">
           <motion.div
         initial={{ opacity: 0.7 }}
         className="w-[16rem] h-[15rem] -left-[4rem] opacity-10 max-md:block hidden z-10 absolute  top-0 bg-[#470985] rounded-full blur-2xl"
       ></motion.div>
             <p>getlinked Tech</p>
-            <p className="flex items-end relative z-30 max-md:justify-center h-24">
+            <p className="flex items-end h-16 relative z-30 max-md:justify-center">
               Hackathon <span className="text-custom-highlight ">1.0</span>
               <img
                 src={IMAGE_PATH.chainImg}
                 alt=""
-                className="object-contain  max-md:scale-50 max-md:w-1/2 h-full"
+                className="object-contain max-sm:h-1/2 max-md:h-4/5"
               />
-              <img src={IMAGE_PATH.fireImg} alt="" className="object-contain max-md:scle-50 max-md:w-1/2 "/>
+              <img src={IMAGE_PATH.fireImg} alt="" className="object-contain  max-sm:h-1/2"/>
             </p>
-          </div>
+          </motion.div>
           <p className="w-8/12 z-30 relative max-md:w-9/12 max-sm:w-full font-Montserrat mb-8">
             Participate in getlinked tech Hackathon 2023 stand a chance to win a
             Big prize
@@ -95,7 +99,15 @@ function HomeBinder() {
           </div>
         </div>
         <div className="relative">
-          <img src={IMAGE_PATH.man_Img_Banner} alt="" className=" grayscale" />
+        <motion.div
+        initial={{ opacity: 0.7 }}
+        animate={{ opacity: 0.8 }}
+        className="w-[14rem] h-[15rem] z-10 absolute right-0 -top-5 bg-[#470985] 
+        rounded-full blur-2xl"
+      ></motion.div>
+          <motion.img
+          {...scaler}
+           src={IMAGE_PATH.man_Img_Banner} alt="" className=" grayscale" />
           <img
             src={IMAGE_PATH.moonImg}
             alt=""

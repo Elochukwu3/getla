@@ -5,15 +5,17 @@ import { Link as LoutLink} from "react-router-dom";
 import { ROUTES } from "@assets/utils/routes";
 import { Link } from "react-scroll";
 import useFuns from "./useFun";
+import { info } from "@assets/utils/data";
 
 function NavBar() {
   const [drop, setDrop] = useState<Boolean>(false);  
- const {handler, info} = useFuns(setDrop);
- const btnHandle = ()=> handler(drop)
+ const {handler} = useFuns(setDrop);
+ const btnHandle = ()=> handler(drop);
+ 
 
 
   return (
-    <div className="border-b border-zinc-700 text-white py-4 max-md:px-5 mb-10">
+    <div className="border-b border-zinc-700 text-white md:p-8 py-4 max-md:px-5 mb-10">
       <nav className="md:w-11/12 mx-auto  flex justify-between items-center text-white">
         <Link to={ROUTES.home} className=" flex font-clash text-4xl">
           <span className="text-white">get</span>

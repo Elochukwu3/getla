@@ -49,14 +49,14 @@ const Policy = () => {
             </span>
             <p>Here are terms of our Standard License:</p>
             <div className="space-y-8 mt-4 mb-8">
-              <div className="flex gap-3">
+              <div className="flex gap-3 z-30 relative">
                 <img src={IMAGE_PATH.good} alt="" className="object-contain" />
                 <p>
                   The Standard License grants you a non-exclusive right to
                   navigate and register for our event
                 </p>
               </div>
-              <div className="flex gap-3">
+              <div className="flex gap-3 z-30 relative">
                 <img src={IMAGE_PATH.good} alt="" className="object-contain" />
                 <p>
                   You are licensed to use the item available at any free source
@@ -64,7 +64,7 @@ const Policy = () => {
                 </p>
               </div>
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center z-30 relative">
               <Button caption="Read More" />
             </div>
           </div>

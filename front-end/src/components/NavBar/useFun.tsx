@@ -6,11 +6,6 @@ import { useNavigate } from "react-router-dom";
 function useFuns(callback: React.Dispatch<React.SetStateAction<Boolean>>) {
   const location = useLocation();
   const navigate = useNavigate();
-  const info = {
-    spy: true,
-    smooth: true,
-    duration: 1000,
-  };
 
   const handler = (val: Boolean): void => {
     if (location.pathname !== ROUTES.home) {
@@ -31,7 +26,7 @@ function useFuns(callback: React.Dispatch<React.SetStateAction<Boolean>>) {
       window.removeEventListener("resize", handleResize);
     };
   }, [callback]);
-  return {handler, info}
+  return {handler}
 }
 
 export default useFuns;

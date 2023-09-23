@@ -13,14 +13,14 @@ function PageCriteria() {
           <motion.div
         initial={{ opacity: 0.7 }}
         animate={{ opacity: 1 }}
-        className="w-[20rem] h-[10rem] absolute left-0 bottom-0 bg-[#470985] rounded-full blur-2xl"
+        className="w-[20rem] h-[10rem] absolute left-0 bottom-0 -max-sm:bottom-5 bg-[#470985] rounded-full blur-2xl"
       ></motion.div>
         </div>
         <div className="flex- w-1/2 max-md:w-full max-md:text-center space-y-5 relative py-14">
         <motion.div
         initial={{ opacity: 0.7 }}
         animate={{ opacity: 1 }}
-        className="w-[15rem] h-[15rem] z-10 absolute right-0 -bottom-[10rem] bg-[#470985] rounded-full blur-2xl"
+        className="w-[15rem] h-[15rem] z-10 absolute right-0 -bottom-[10rem] bg-[#470985] max-md:hidden rounded-full blur-2xl"
       ></motion.div>
           <HeaderText header1="Judging Criteria" header2="Key attributes " />
           {PAGE_TEXT.judgingCriteria.map((item) => (
