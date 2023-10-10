@@ -27,7 +27,7 @@ function Register() {
           <motion.div
     initial={{opacity: 0.7}}
     animate={{opacity: 0.8}}
-    className="w-[20rem] h-[20rem] top-10 bg-[#470985] absolute z-20 rounded-full blur-2xl"
+    className="w-[20rem] h-[20rem] top-10 bg-[#470985] absolute z-20 rounded-full blur-2xl max-sm:blur-xl"
     >
       
     </motion.div>
